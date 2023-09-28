@@ -650,7 +650,7 @@ input[type='checkbox'] {
 }
 
 .header .h4-first {
-	font-family: cursive,Brush Script MT;
+	font-family: 'Mr Dafoe',Brush Script MT,cursive;
 	color: #ffffff;
 	font-weight: 0;
 	font-size: 2.5rem;
@@ -659,7 +659,7 @@ input[type='checkbox'] {
 }
 
 .header .h4-second {
-	font-family: cursive,Brush Script MT;
+	font-family: 'Mr Dafoe',Brush Script MT,cursive;
 	color: #ffffff;
 	font-weight: 100;
 	font-size: 2rem;
