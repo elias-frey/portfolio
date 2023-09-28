@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Data Science Project">
+    <meta name="author" content="Elias Frey">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>House Price Prediction</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/logoicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logoicon.png" alt="alternative"></a>  
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#projects">Portfolio</a>
+                    <!-- </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="project.html">Project Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                        </div>
+                    </li>> -->
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <!-- <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x"style="font-size:24px"></i>
+                        </a>
+                    </span> -->
+                    <span class="fa-stack">
+                        <a href="https://www.linkedin.com/in/eliasfrey" target="_blank">
+                            <!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+                            <i class="fab fa-linkedin fa-stack-2x"style="font-size:24px"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                         <!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+                         <i id="showTooltip" class="fa fa-envelope fa-stack-3x" style="font-size:24px"></i>
+                         <div id="tooltip" class="hidden">
+                             <!-- Tooltip content goes here -->
+                             Click to copy e-mail: <span id="email"><a class="email-link">frey.ilya.32@gmail.com</a></span>
+                         </div>
+                         <div id="notification" class="hidden">
+                             <!-- Notification content goes here -->
+                             Copied
+                         </div>
+                         <!-- Include JavaScript to handle the tooltip -->
+                         <script src="js/email.js"></script>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Data Science and ML: House Price Prediction</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="mb-3">
+                        Project Overview</h2>
+                    <p>This project shows how modern Data Science and Machine Learning techniques can be applied for solving
+                        complex tasks, such as the prediction of a house prices based on descriptive features. </p>
+                    <p class="mb-5">The dataset I worked on for this project contains information about nearly 1500 
+                         house deals. Each deal includes the final house price along with 80 additional 
+                        descriptive parameters that provide detailed information about the property and the 
+                        transaction.
+                    </p>
+
+                            <!-- <h2 class="mb-3">Advantages of working with this template</h2>
+                            <p>Besides buying the template you need some basic web skills in order to customize it. 
+                                Nothing too fancy HTML/CSS will do just fine and a little bit of image editing. 
+                                You can always hire a web designer to help with the customization work while you provide 
+                                the template and the content that is the most important.</p>
+                            <p class="mb-4">Riga is a landing page HTML template made with Bootstrap to help you 
+                                showcase your mobile app online and persuade visitors to download it from the app stores. 
+                                The author used Bootstrap to build the template and integrated a nice animated navigation 
+                                that slides from outside the screen.</p> -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <!-- About-->
+    <div id="about" class="basic-11 bg-gray">
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-4">
+                    <div class="text-container first">
+                        <h3>GOAL</h3>
+                        <p>The main objective is to predict house prices based on the descriptive parameters with 
+                            highest possible accuracy. The secondary goal is to find the most influential parameters,
+                        which affect the end price. </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container second">
+                        <h3>METHOD</h3>
+                        <p>The project is structured according to the Data Science Lifecycle. Advanced data science and
+                             machine learning techniques were applied in order to reach objectives and train the predicting model.
+                             The code is written in Python.
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container third">
+                        <h3>RESULT</h3>
+                        <p>As a result the best-performing prediction model was selected. This model allows to accurately predict the
+                            house price based on certain input parameters. In addition, the list of parameters that are most correlated to the house price
+                            to the house price was created.
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of about -->
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-3 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="mt-4">Framework</h2>
+                    <p> The Data Science Lifecycle served as the framework for this project:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/datasciencelifecycle.jpg    " alt="alternative">
+                    </div> 
+                    <hr class="section-divider">
+                    <h2 class="mt-4">Data Cleaning</h2>
+                    <p> The first step was to address inconsistencies in the data, such as missing values and outliers, 
+                        which could negatively 
+                        impact the accuracy of the prediction model. Tools like boolean masks were used for this purpose.
+                    </p>
+                    <p> An example of outliers in house prices:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/outlierssaleprice.jpg" alt="alternative">
+                    </div> 
+                    <p> Removing outliers using boolean masks:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/booleanmaskoutliers.png" alt="alternative">
+                    </div> 
+                    <p> Managing missing values:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/managingmissing.png" alt="alternative">
+                    </div> 
+                    <p> The following step involved converting string values, which are not readable by machine learning algorithms, 
+                        into numerical ones. Common techniques like ordinal and one-hot encoding were applied.
+                    </p>
+                    <p> Example of ordinal encoding:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/ordinalenc.png" alt="alternative">
+                    </div> 
+                    <p> And one-hot encoding, also known as 'dummies':
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/getdummies.png" alt="alternative">
+                    </div> 
+                    <hr class="section-divider">
+                    <h2 class="mt-4">Data Exploration</h2>
+                    <p> Exploring the data is a crucial step as it provides insights into correlations between different 
+                        variables and helps uncover valuable information about the business. 
+                        For example, in the case of house sales, it was discovered that there is a 
+                        seasonal pattern in the number of houses sold, with the highest number of deals occurring during the summer season.
+                    </p>
+                    <p> The number of houses sold per month:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/housespermonth.png" alt="alternative">
+                    </div> 
+                    <p> And, of course, the most important part: the price. As seen in the image below, 
+                        the average house price per month is inversely proportional to the number of
+                         houses sold that month. This illustrates the fundamental economic law of supply and demand:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/pricespermonth.png" alt="alternative">
+                    </div> 
+                    <p> Another step is to assess the normality of the target data, which is the sale price.
+                         It was found that house prices follow a normal distribution with 
+                        a slight right skew, indicating that the data is more dispersed toward higher house prices:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/distributin.jpg" alt="alternative">
+                    </div> 
+                    <p> A valuable tool for uncovering data interdependencies and trends about the business is a heatmap. 
+                        The following image displays only the features most highly correlated with the sale price:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/heatmap.png" alt="alternative">
+                    </div> 
+                    <p> From the shown heatmap, we can see that features such as 'overall quality of the finish,' 'ground living area,' 
+                        and 'neighborhood' are highly 
+                        correlated with the final sale price of the house. Therefore, they could be used to estimate the price.
+                    </p>
+                    <hr class="section-divider">
+                    <h2 class="mt-4">Feature Engineering</h2>
+                    <p> In this step, features to be used for training the predictive model are selected. 
+                        The purpose of removing features is to prevent overfitting, 
+                        which can lead to lower accuracy. Therefore, only features that have significance are kept.
+                    </p>
+                    <p> I used an automated method, called step-wise selection, which returns the list of best features:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/featureeng.png" alt="alternative">
+                    </div> 
+                    <p> As a result, only 36 out of 96 features were selected.
+                    </p>
+                    <hr class="section-divider">
+                    <h2 class="mt-4">Hyperparameter Tuning</h2>
+                    <p> Before training the predictive model, the tuning of its main parameters must be done. 
+                        To determine the values to which these parameters should be adjusted, I used a cross-validator's exhaustive search. 
+                        This method is computationally intensive but ensures the selection of the best parameter combination.
+                    </p>
+                    <p> Hyperparameter tuning is performed for each individual model. An example for Gradient Booster is shown:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/hypergradientbooster.png" alt="alternative">
+                    </div> 
+                    <p> Received sets of hyperparameters will be used to adjust house price predictive models.
+                    </p>
+                    <hr class="section-divider">
+                    <h2 class="mt-4">Training the model</h2>
+                    <p> I selected five machine learning models and compared their performance based on accuracy for this project. 
+                        The tested models include 
+                        Linear Regression, K-Neighbors Regressor, Support Vector Regressor, Ridge Regression, and Gradient Booster.
+                    </p>
+                    <p> The most accurate model was the Support Vector Regressor (SVR), with the Gradient Booster 
+                        (GB) coming in a close second. Here is what the training of the model looks like, using the example of SVR:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/svrtrain.png" alt="alternative">
+                    </div> 
+                    <p> The trained SVR model can predict the final sale price of a house with an impressive average 
+                        accuracy of 92%, while the maximum accuracy achieved in a good train/test split reaches 95%.
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/SVRoutput.png" alt="alternative">
+                    </div> 
+                    <p> Taking into account the irreducible error, assosiated, for example, with house price variability 
+                        on the market, the achieved accuracy of SVR predicting model is close to perfect.
+                    </p>
+                    <hr class="section-divider">
+                    <h2 class="mt-4">Visualizing the Results</h2>
+                    <p> In the final step, values predicted by the trained model are compared to the corresponding actual values from test data. 
+                        In the following scatter plot, red dots represent actual values, while blue ones represent predicted values:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/svrcompchart.png" alt="alternative">
+                    </div> 
+                    <p> The similarity and accuracy of prediction is, perhaps, even more clear when comparing the numbers:
+                    </p>
+                    <div class="col-xl-10 offset-xl-1">
+                        <img class="img-fluid mb-3" src="images/svrcompnumb.png" alt="alternative">
+                    </div> 
+                    <p> To explore this project in greater detail, you are welcome to visit my 
+                        <a target="_blank" href="https://github.com/user763/dataanalysis/tree/main/HousePricePrediction">
+                            GitHub page.</a>
+                    </p>
+                </div>
+                <a class="btn-solid-reg mb-5" href="index.html">Back</a>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+        
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <!-- <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"style="font-size:30px"></i>
+                            </a>
+                        </span> -->
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/eliasfrey" target="_blank">
+                                <!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+                                <i class="fab fa-linkedin fa-stack-02x"style="font-size:30px"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="mailto:frey.ilya.32@gmail.com">
+                                <!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+                                <i class="fa fa-envelope fa-stack-3x"style="font-size:30px"></i>
+                            </a>
+                        </span>
+                        <!-- <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">© <a class="no-line"> 2023 Elias Frey</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->       
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
