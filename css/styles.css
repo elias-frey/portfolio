@@ -650,23 +650,23 @@ input[type='checkbox'] {
 }
 
 .header .h4-first {
-	font-family: Arial, cursive,'Mr Dafoe',Brush Script MT;
+	font-family: Console, cursive,'Mr Dafoe',Brush Script MT;
 	color: #ffffff;
 	font-weight: 0;
 	font-size: 2rem;
 	line-height: 2rem;
-	font-style: italic
+	font-style: normal
 }
 
 .header .h4-second {
-	font-family: Arial, cursive,'Mr Dafoe',Brush Script MT;
+	font-family: Console, cursive,'Mr Dafoe',Brush Script MT;
 	color: #ffffff;
-	font-weight: 100;
-	font-size: 1.2rem;
-	line-height: 1.2rem;
-	margin-bottom: 1.2rem;
+	font-weight: 0;
+	font-size: 2rem;
+	line-height: 2rem;
+	margin-bottom: 2rem;
 	text-align:right;
-	font-style: italic
+	font-style: normal
 	
 
 }
