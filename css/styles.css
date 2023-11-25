@@ -652,7 +652,7 @@ input[type='checkbox'] {
 .header .h4-first {
 	font-family: 'Courier New', cursive,'Mr Dafoe',Brush Script MT;
 	color: #ffffff;
-	font-weight: 0;
+	font-weight: 200;
 	font-size: 1.5rem;
 	line-height: 1.5rem;
 	font-style: normal
@@ -661,7 +661,7 @@ input[type='checkbox'] {
 .header .h4-second {
 	font-family: 'Courier New', cursive,'Mr Dafoe',Brush Script MT;
 	color: #ffffff;
-	font-weight: 0;
+	font-weight: 200;
 	font-size: 1.5rem;
 	line-height: 1.5rem;
 	margin-bottom: 1.5rem;
